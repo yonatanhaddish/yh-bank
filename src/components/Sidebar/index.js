@@ -1,5 +1,5 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon } from './SidebarElements'
+import { SidebarContainer, CloseIcon } from './SidebarElements'
 
 export const Sidebar = () => {
     return (
@@ -22,4 +22,4 @@ export const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default Sidebar

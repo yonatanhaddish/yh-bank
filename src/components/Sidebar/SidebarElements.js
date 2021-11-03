@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 
-export const SidebarContainer = styled.aside `
+export const SidebarContainer = style.aside `
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -14,16 +14,6 @@ export const SidebarContainer = styled.aside `
     top: 0;
 `
 
-export const CloseIcon = styled(FaTimes) `
+export const CloseIcon = style(FaTimes) `
     color:#fff;
-`
-
-export const Icon = styled.div `
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    background: tranparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: none;
 `
