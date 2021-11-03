@@ -7,8 +7,11 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavBtn,
+  NavBtnLink
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
+
 
 const Navbar = () => {
   return (
@@ -30,9 +33,12 @@ const Navbar = () => {
               <NavLinks to="services">Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="signup">Sign up</NavLinks>
+              <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/signin">Sing In</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
