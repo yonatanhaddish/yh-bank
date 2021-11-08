@@ -1,13 +1,13 @@
 import React from 'react'
-import { SidebarContainer, CloseIcon } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SideBtnWrap, SidebarLink, SidebarRoute, SidebarWrapper, SidebarMenu } from './SidebarElements';
 
-export const Sidebar = () => {
+const Sidebar = () => {
     return (
         <SidebarContainer>
             <Icon>
                 <CloseIcon />
             </Icon>
-            {/* <SidebarWrapper>
+            <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about">About</SidebarLink>
                     <SidebarLink to="discover">Discover</SidebarLink>
@@ -17,9 +17,9 @@ export const Sidebar = () => {
                 <SideBtnWrap>
                     <SidebarRoute to="/signin">Sign In</SidebarRoute>
                 </SideBtnWrap>
-            </SidebarWrapper> */}
+            </SidebarWrapper>
         </SidebarContainer>
     );
 };
 
-export default Sidebar
+export default Sidebar;
