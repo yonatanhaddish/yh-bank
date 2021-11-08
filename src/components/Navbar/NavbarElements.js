@@ -51,7 +51,7 @@ export const MobileIcon =  styled.div `
         trasnform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: green;
+        color: #fff;
     }
 `
 
@@ -111,6 +111,5 @@ export const NavBtnLink = styled(LinkR) `
         transition: all 0.2s ease-in-out;
         background: #fff;
         color: #010606;
-        opacity: 50%;
     }
 `
