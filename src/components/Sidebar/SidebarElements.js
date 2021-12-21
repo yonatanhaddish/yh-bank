@@ -13,9 +13,9 @@ export const SidebarContainer = styled.aside `
     align-items: center;
     left: 0;
     transition: 0.3s ease-in-out;
-    /* top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')}; */
-    top: 0;
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    /* top: 0; */
 `;
 
 export const Icon = styled.div`
