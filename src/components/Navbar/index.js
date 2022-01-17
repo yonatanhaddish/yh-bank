@@ -13,7 +13,8 @@ import {
   NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = ( { toggle }) => {
+const Navbar = ({toggle, isOpen}) => {
+
   return (
     <>
       <Nav>
