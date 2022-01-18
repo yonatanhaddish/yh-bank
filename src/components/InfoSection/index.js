@@ -13,7 +13,7 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
+  Img,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -29,7 +29,8 @@ const InfoSection = ({
   alt,
   img,
   primary,
-  imgStart
+  imgStart,
+  dark
 }) => {
   return (
     <>
@@ -42,13 +43,18 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home" primary={primary}
+                  <Button
+                    to="home"
+                    primary={primary}
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact="true"
                     offset={-80}
-                  >{buttonLabel}</Button>
+                    dark={dark}
+                  >
+                    {buttonLabel}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

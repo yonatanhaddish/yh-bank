@@ -28,7 +28,7 @@ export const homeObjTwo= {
     imgStart: true,
     img: require('../../images/logInPhoto.svg').default,
     alt: 'login',
-    dark: true,
+    dark: false,
     primary: false,
     darkText: true,
     imageStart: ''
