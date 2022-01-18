@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from '../ButtonElements';
+import { Button } from "../ButtonElements";
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,29 +13,41 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
+  Img,
 } from "./InfoElements";
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg,
+  imageStart,
+  topLine,
+  lightText,
+  darkText,
+  description,
+  buttonLabel,
+  id,
+  headLine,
+  alt,
+  img
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imageStart={imageStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>Topline</TopLine>
-                <Heading>Heading</Heading>
-                <Subtitle>Subtitle</Subtitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">Button</Button>
+                  <Button to="home">{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
-                <ImgWrap>
-                    <Img />
-                </ImgWrap>
+              <ImgWrap>
+                <Img src={img} alt={alt} />
+              </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>
