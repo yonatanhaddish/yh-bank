@@ -13,7 +13,7 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img,
+  Img
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -27,20 +27,28 @@ const InfoSection = ({
   id,
   headLine,
   alt,
-  img
+  img,
+  primary,
+  imgStart
 }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow imageStart={imageStart}>
+          <InfoRow imgStart={imgStart} imageStart={imageStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">{buttonLabel}</Button>
+                  <Button to="home" primary={primary}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                  >{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
