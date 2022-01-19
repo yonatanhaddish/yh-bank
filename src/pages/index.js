@@ -3,7 +3,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 
 function Home() {
 
@@ -20,6 +20,7 @@ function Home() {
         <HeroSection />
         <InfoSection {...homeObjOne}/>
         <InfoSection {...homeObjTwo}/>
+        <InfoSection {...homeObjThree}/>
      </>
     );
   }
