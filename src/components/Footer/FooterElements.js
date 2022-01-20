@@ -15,7 +15,7 @@ export const FooterWrap= styled.div`
     margin: 0 auto;
 `;
 
-export const FootetLinksContainer= styled.div`
+export const FooterLinksContainer= styled.div`
     display: flex;
     justify-content: center;
 
