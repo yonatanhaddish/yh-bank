@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Services from '../components/Services';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
+import Footer from '../components/Footer';
 
 function Home() {
 
@@ -23,6 +24,7 @@ function Home() {
         <InfoSection {...homeObjTwo}/>
         <Services />
         <InfoSection {...homeObjThree}/>
+        <Footer />
      </>
     );
   }
