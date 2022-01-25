@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
   Nav,
@@ -15,11 +16,15 @@ import {
 
 const Navbar = ({toggle, isOpen}) => {
 
+  const toggleHome= () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">YH-Bank</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>YH-Bank</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
