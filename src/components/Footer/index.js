@@ -17,7 +17,8 @@ import {
   SocialIconLink
 } from "./FooterElements";
 
-const Footer = () => {
+const Footer = ({toogleHome}) => {
+
   return (
     <>
       <FooterContainer>
@@ -59,7 +60,7 @@ const Footer = () => {
           </FooterLinksContainer>
           <SocialMedia>
               <SocialMediaWrap>
-                  <SocialLogo to="/">YH-Bank</SocialLogo>
+                  <SocialLogo to="/" onClick={toogleHome}>YH-Bank</SocialLogo>
                   <WebsiteRights>YH-Bank © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                   <SocialIcons>
                       <SocialIconLink href="/" target="_blank" aria-label="Facebook">

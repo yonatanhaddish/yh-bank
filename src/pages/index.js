@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Services from '../components/Services';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import Footer from '../components/Footer';
+import { animateScroll as scroll } from "react-scroll";
 
 function Home() {
 
@@ -15,16 +16,20 @@ function Home() {
     setIsOpen(!isOpen);
   };
 
+  const toogleHome= () => {
+    scroll.scrollToTop();
+  };
+
     return (
       <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
+        <Navbar toggle={toggle} toogleHome={toogleHome}/>
         <HeroSection />
         <InfoSection {...homeObjOne}/>
         <InfoSection {...homeObjTwo}/>
         <Services />
         <InfoSection {...homeObjThree}/>
-        <Footer />
+        <Footer toogleHome={toogleHome}/>
      </>
     );
   }
