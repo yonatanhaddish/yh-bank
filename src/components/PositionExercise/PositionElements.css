@@ -3,17 +3,21 @@
     font-size: 50px;
     padding-left: 100px;
     height: 300px;
+    margin-top: 40px;
+    position: relative;
 }
 
 .childOne {
     background: #cc90d6;
     /* width: 80%; */
-    position: absolute;
+    position: fixed;
+    top: 0;
 }
 
 .childTwo {
     background: #8aeb9e;
     /* width: 80%; */
+    /* position: absolute; */
 }
 
 .childThree {
