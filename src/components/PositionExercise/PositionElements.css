@@ -1,15 +1,22 @@
 .parent {
-    background: 'red';
+    background-color: #e5ed47;
+    font-size: 50px;
+    padding-left: 100px;
+    height: 300px;
 }
 
-/* .parent .childOne {
-    background: '#cc90d6';
+.childOne {
+    background: #cc90d6;
+    /* width: 80%; */
+    position: absolute;
 }
 
 .childTwo {
-    background: "#8aeb9e";
+    background: #8aeb9e;
+    /* width: 80%; */
 }
 
 .childThree {
-    background: "#e4ed6b";
-} */
+    background: #3474eb;
+    /* width: 80%; */
+}

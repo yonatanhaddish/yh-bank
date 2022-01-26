@@ -6,9 +6,9 @@ const Position = () => {
       <>
         <div className='parent'>
             Parent
-            {/* <div className='childOne'>One</div>
+            <div className='childOne'>One</div>
             <div className='childTwo'>Two</div>
-            <div className='childThree'>Three</div> */}
+            <div className='childThree'>Three</div>
         </div>
       </>
   );
